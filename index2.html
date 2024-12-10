@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ресторан с магической атмосферой, лучшим качеством еды и доступными ценами.">
+    <meta name="keywords" content="ресторан, еда, меню, бронь, Санкт-Петербург, атмосферный ресторан">
+    <meta name="author" content="Ресторан">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ресторан</title>
+
+</head>
+
+<body>
+    
+    <button id="sidebarToggle" class="toggle-btn">☰</button>
+<div class="sidebar">
+    <div class="sidebar-header">Меню</div>
+    <ul class="sidebar-menu">
+        <li><a href="index2.html">Главная</a></li>
+        <li><a href="history.html">О нас</a></li>
+        <li><a href="filtr.html">Меню</a></li>
+        <li><a href="reservation.html">Бронь</a></li>
+    </ul>
+</div>
+
+        <div class="content">
+           
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    </body>
+    
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <img src="logo.png" alt="Логотип ресторана">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a class="nav-item" href="index.html">Главная</a></li>
+                        <li class="dropdown">
+                            <a class="nav-item" href="menu.html" aria-haspopup="true" aria-expanded="false">Меню</a>
+                            <ul class="dropdown-content">
+                                <li><a href="menu-appetizers.html">Меню с аппетайзерами</a></li>
+                                <li><a href="vinnya.html">Винная карта</a></li>
+                                <li><a href="menu_drinks.html">Меню напитков</a></li>
+                                <li><a href="menu_beer.html">Пивное меню</a></li>
+                                <li><a href="menu_desserts.html">Десертное меню</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-item" href="history.html">О нас</a></li>
+                        <li><a class="nav-item" href="reservation.html">Бронь</a></li>
+                    </ul>
+                </nav>
+                <script src="script.js"></script>
+
+                <div class="cart">
+                    <a href="#">
+                        <img class="cart-icon" src="cart.png" alt="Корзина покупок — переход в корзину">
+                    </a>
+                </div>
+                <div class="phone">
+                    <div class="phone-img">
+                        <img src="phone.png" alt="Контактный телефон">
+                    </div>
+                    <div class="number">
+                        <a class="num" href="tel:+7711950524">+7 (711) 950-52-24</a>
+                    </div>
+                    <div class="phone-text">
+                        Свяжитесь с нами для <br> бронирования
+                    </div>
+                </div>
+                <div class="btn">
+                    <a class="button" href="booking.html">Заказ столика</a>
+                </div>
+            </div>
+            <div class="header-down">
+                <h1>Добро пожаловать в</h1>
+                <h2>Наш ресторан</h2>
+                <div class="header-btn">
+                    <a href="filtr.html" class="header-button">Посмотреть меню</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="container">
+                <div class="cards-holder">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="card-img" src="card.png" alt="Магическая атмосфера ресторана">
+                        </div>
+                        <div class="card-title">Магическая <span>Атмосфера</span></div>
+                        <div class="card-desc">
+                            В нашем заведении царит магическая атмосфера, наполненная вкусными ароматами.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="card-img" src="card.png" alt="Высокое качество еды">
+                        </div>
+                        <div class="card-title">Лучшее качество <span>Еды</span></div>
+                        <div class="card-desc">
+                            Качество нашей еды — отменное!
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="card-img" src="card.png" alt="Доступная еда">
+                        </div>
+                        <div class="card-title">Недорогая <span>Еда</span></div>
+                        <div class="card-desc">
+                            Стоимость нашей еды зависит только от её количества. Качество всегда на высоте!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+              <div class="history-holder">
+                <div class="history-info">
+                  <h2>Наша <span>История</span></h2>
+                  <p class="history-desc">
+                    Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно.
+                    Во время прогулки по лесу создатель нашего ресторана оказался вдали от цивилизации, в сотнях километров от ближайшего населённого пункта.
+                    Ему пришлось временно обустроить себе нехитрый быт, добывать и готовить себе еду на природе.
+                  </p>
+                  <div class="history-number">
+                    <div class="number-item">
+                      <h3>93</h3>
+                      <span>Напитки</span>
+                    </div>
+                    <div class="number-item">
+                      <h3>206</h3>
+                      <span>Блюда</span>
+                    </div>
+                    <div class="number-item">
+                      <h3>71</h3>
+                      <span>Закуски</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-images">
+                  <img class="image" src="1.jpg" alt="Историческое фото ресторана">
+                  <img class="image" src="2.jpg" alt="Историческое фото ресторана">
+                  <img class="image" src="3.jpg" alt="Историческое фото ресторана">
+                  <img class="image" src="3.jpg" alt="Историческое фото ресторана">
+                  <img class="image" src="2.jpg" alt="Историческое фото ресторана">
+                  <img class="image" src="1.jpg" alt="Историческое фото ресторана">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          
+
+        <section class="black-block">
+            <div class="container">
+                <div class="block-holder">
+                    <div class="left">
+                        <div class="left-title">
+                            Отпразднуйте в одном из <br> самых лучших ресторанов.
+                        </div>
+                        <div class="left-text">
+                            Только в этом месяце бизнес-ланч от 2500 тг
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="button" href="statistics.html">Статистика ресторана</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dishes">
+            <div class="container">
+                <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+                <script>
+                  AOS.init({
+                    duration: 1000, 
+                    once: true, 
+                    offset: 200, 
+                  });
+                </script>
+                
+                <div class="section">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-md-7 text-center" data-aos="fade-up">
+                          <h2 class="mb-4">Наши Специальные Блюда</h2>
+                          <p class="lead">Уникальные блюда, созданные с любовью и вдохновением для вашего наслаждения.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="section pt-0 pb-0">
+                    <div class="menus d-flex bg-light">
+                      
+                      <div class="d-flex item">
+                        <div class="image" style="background-image: url(https://img.lovepik.com/bg/20231218/fried-egg-in-roasted-garlic-and-parsley-on-a-black_2474976_wh860.png);" data-aos="fade"></div>
+                        <div class="text">
+                          <h3>Жареное яйцо с чесноком</h3>
+                          <p>Простое и вкусное блюдо с нежным вкусом чеснока.</p>
+                          <p class="price">₸2300</p>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex item">
+                        <div class="image order-2 order-md-1" style="background-image: url(https://static.tildacdn.com/tild3561-3365-4231-b633-346436323130/5aca08c415ac5b09bd6a.jpeg);" data-aos="fade" data-aos-delay="100"></div>
+                        <div class="text order-1 order-md-2">
+                          <h3>Органический салат с томатами</h3>
+                          <p>Свежие томаты с лёгкой заправкой и натуральными ингредиентами.</p>
+                          <p class="price">₸2700</p>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex item">
+                        <div class="image order-1 order-md-2" style="background-image: url(https://chaihonauz.ru/wp-content/uploads/2022/09/%D0%9B%D0%B5%D0%BF%D1%91%D1%88%D0%BA%D0%B0.jpg);" data-aos="fade" data-aos-delay="200"></div>
+                        <div class="text order-2 order-md-1">
+                          <h3>Лепёшка</h3>
+                          <p>Ароматная свежевыпеченная лепёшка, которая подойдёт к любому блюду.</p>
+                          <p class="price">₸1000</p>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex item">
+                        <div class="image order-2" style="background-image: url(https://ferma-m2.ru/images/shop/recipe_image/crop__2_4.jpg);" data-aos="fade" data-aos-delay="300"></div>
+                        <div class="text order-1 mb-3">
+                          <h3>Каре ягнёнка</h3>
+                          <p>Сочное мясо ягнёнка, приготовленное до совершенства.</p>
+                          <p class="price">₸5900</p>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex item">
+                        <div class="image order-1" style="background-image: url(https://shuba.life/static/content/thumbs/1905x884/4/63/zqodzw---c1905x884x50px50p-up--05e8808a996f432f9e694882d4814634.jpg);" data-aos="fade" data-aos-delay="400"></div>
+                        <div class="text order-2">
+                          <h3>Баклажан Пармиджано</h3>
+                          <p>Нежный запечённый баклажан с томатным соусом и сыром.</p>
+                          <p class="price">₸4100</p>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex item">
+                        <div class="image order-2" style="background-image: url(https://img.freepik.com/free-photo/meatballs-sweet-sour-tomato-sauce-basil-wooden-bowl_2829-7650.jpg);" data-aos="fade" data-aos-delay="500"></div>
+                        <div class="text order-1">
+                          <h3>Острые фрикадельки</h3>
+                          <p>Аппетитные фрикадельки с насыщенным соусом.</p>
+                          <p class="price">₸3200</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                <div class="burgers">
+                    <div class="burgers-image">
+                        <img src="pizza.png" class="pizza" alt="Пицца">
+                    </div>
+                    <div class="burgers-items">
+                        <div class="burger-item">
+                            <img src="burger.png" class="burger" alt="Мини гамбургер">
+                            <div class="burger-text">
+                                Гамбургер мини ------------------- 2200 тг
+                            </div>
+                        </div>
+                        <div class="burger-item">
+                            <img src="burger.png" class="burger" alt="Мини гамбургер">
+                            <div class="burger-text">
+                                Гамбургер мини ------------------- 2200 тг
+                            </div>
+                        </div>
+                        <div class="burger-item">
+                            <img src="burger.png" class="burger" alt="Мини гамбургер">
+                            <div class="burger-text">
+                                Гамбургер мини ------------------- 2200 тг
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb_section bg-light" id="section-events">
+            <div class="container">
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-10 text-center">
+                  <h2 class="mb-4 text-uppercase pb_letter-spacing-2">События</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card-deck">
+                 
+                  <div class="card border-0 event-card" data-aos="fade-up" data-aos-delay="100">
+                    <img class="card-img-top" src="https://m.efl-study.ru/upload/resize_cache/iblock/0ac/1200_600_2/Thanksgiving%20Day%20History%20and%20Traditions%20(1).jpg" alt="День благодарения">
+                    <div class="card-body pb_p-40">
+                      <small class="text-uppercase pb_color-dark-opacity-3 font-weight-bold">2 декабря, 2023</small>
+                      <h4 class="card-title"><a href="#" class="text-danger">День благодарения</a></h4>
+                      <p class="card-text">Вдохновляющие события, чтобы выразить признательность и насладиться теплом компании близких.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card border-0 event-card" data-aos="fade-up" data-aos-delay="200">
+                    <img class="card-img-top" src="https://s7.stc.all.kpcdn.net/family/wp-content/uploads/2022/10/den-blagodareniya-1-960x540.jpg" alt="Творческий понедельник">
+                    <div class="card-body pb_p-40">
+                      <small class="text-uppercase pb_color-dark-opacity-3 font-weight-bold">10 декабря, 2023</small>
+                      <h4 class="card-title"><a href="#" class="text-danger">Творческий понедельник</a></h4>
+                      <p class="card-text">Начните неделю с вдохновения и креативных идей в уютной атмосфере нашего ресторана.</p>
+                    </div>
+                  </div>
+                 
+                  <div class="card border-0 event-card" data-aos="fade-up" data-aos-delay="300">
+                    <img class="card-img-top" src="https://blog.to4ka.us/wp-content/uploads/2021/11/Pic-01-1024x653.jpg" alt="Семейные промо">
+                    <div class="card-body pb_p-40">
+                      <small class="text-uppercase pb_color-dark-opacity-3 font-weight-bold">23 декабря, 2023</small>
+                      <h4 class="card-title"><a href="#" class="text-danger">Семейные промо</a></h4>
+                      <p class="card-text">Семейный день с детьми и приятными бонусами для всей семьи в этот праздник.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+    
+
+        <section class="ftco-section">
+            <div class="container">
+              <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 class="mb-4">Горячие пиццы</h2>
+                  <p>Вкус настоящей пиццы — это магия свежих ингредиентов и мастерства.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container-wrap">
+              <div class="row no-gutters d-flex">
+                
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img" style="background-image: url(https://worldlytreat.com/wp-content/uploads/2021/05/Italian-pepperoni-pizza-recipe-060-scaled.jpg);"></a>
+                    <div class="text p-4">
+                      <h3>Итальянская пицца</h3>
+                      <p>Традиционная пицца с ароматными специями и настоящим итальянским соусом.</p>
+                      <p class="price"><span>₸1800</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img" style="background-image: url(https://hungryhealthyhappy.com/wp-content/uploads/2021/03/greek-pizza-featured-b.jpg);"></a>
+                    <div class="text p-4">
+                      <h3>Греческая пицца</h3>
+                      <p>Сочетание свежих овощей, оливок и мягкого сыра фета.</p>
+                      <p class="price"><span>₸2100</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img" style="background-image: url(https://tastesbetterfromscratch.com/wp-content/uploads/2020/10/White-Pizza-6.jpg);"></a>
+                    <div class="text p-4">
+                      <h3>Кавказская пицца</h3>
+                      <p>Пицца с мягким сыром, зеленью и специями, любимая на Кавказе.</p>
+                      <p class="price"><span>₸2100</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img order-lg-last" style="background-image: url(https://www.mashed.com/img/gallery/how-authentic-pizza-is-different-from-the-american-version/l-intro-1606849151.jpg);"></a>
+                    <div class="text p-4">
+                      <h3>Американская пицца</h3>
+                      <p>Толстое тесто, много сыра и ароматная начинка — классика США.</p>
+                      <p class="price"><span>₸1900</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img order-lg-last" style="background-image: url(https://www.savingdessert.com/wp-content/uploads/2022/07/Tomato-Pie-15.jpg);"></a>
+                    <div class="text p-4">
+                      <h3>Томатный пирог</h3>
+                      <p>Лёгкая пицца с насыщенным томатным вкусом, идеально для лета.</p>
+                      <p class="price"><span>₸1900</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 d-flex ftco-animate">
+                  <div class="services-wrap d-flex">
+                    <a href="#" class="img order-lg-last" style="background-image: url(https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067);"></a>
+                    <div class="text p-4">
+                      <h3>Маргарита</h3>
+                      <p>Классическая пицца с сыром моцарелла, томатами и базиликом.</p>
+                      <p class="price"><span>₸1900</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Заказать</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="ftco-section">
+            <div class="container">
+              <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 class="mb-4">Наши Шефы</h2>
+                  <p class="flip">
+                    <span class="deg1"></span>
+                    <span class="deg2"></span>
+                    <span class="deg3"></span>
+                  </p>
+                  <p class="mt-5">
+                    Вкус блюда зависит не только от ингредиентов, но и от мастерства повара.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                
+                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                    <div class="img mb-4" style="background-image: url(https://e-chef.ru/wa-data/public/shop/products/37/67/26737/images/1394/1394.970.jpg);"></div>
+                    <div class="info text-center">
+                      <h3><a href="#">Иван Петров</a></h3>
+                      <span class="position">Специалист по русской кухне</span>
+                      <div class="text">
+                        <p>Более 15 лет опыта в приготовлении блюд русской кухни. Его борщ и пельмени известны далеко за пределами ресторана.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                    <div class="img mb-4" style="background-image: url(https://img.freepik.com/premium-photo/woman-chef-s-uniform-stands-front-white-background_25996-7145.jpg);"></div>
+                    <div class="info text-center">
+                      <h3><a href="#">Елена Сидорова</a></h3>
+                      <span class="position">Кондитер</span>
+                      <div class="text">
+                        <p>Мастер приготовления десертов. Её медовик и шоколадный торт — настоящие произведения искусства.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                    <div class="img mb-4" style="background-image: url(https://images.uzum.uz/cfopvtnhj8j9g697sk2g/original.jpg);"></div>
+                    <div class="info text-center">
+                      <h3><a href="#">Алексей Смирнов</a></h3>
+                      <span class="position">Шеф европейской кухни</span>
+                      <div class="text">
+                        <p>Специализируется на итальянских и французских блюдах. Его паста карбонара и бефстроганов всегда на высоте.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                    <div class="img mb-4" style="background-image: url(https://img.freepik.com/premium-photo/woman-chef-s-uniform-stands-front-white-background_25996-7185.jpg);"></div>
+                    <div class="info text-center">
+                      <h3><a href="#">Мария Иванова</a></h3>
+                      <span class="position">Мастер азиатской кухни</span>
+                      <div class="text">
+                        <p>Приготовление суши и вок-блюд — её стихия. Добавляет в блюда свою особую изюминку.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="coment">
+            <div class="container">
+                <div class="coment-text">
+                    Я надолго запомню мой День рождения, проведённый в этом ресторане!
+                    Кусочек родной Армении!!! Отдельное спасибо за комплимент в виде фруктовой тарелки.
+                    Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+                </div>
+
+                <div class="coment-image">
+                    <img src="face.png" class="coment-img" alt="Фотография посетителя">
+                </div>
+
+                <div class="coment-type">
+                    Посетитель
+                </div>
+
+                <div class="coment-name">
+                    Николай
+                </div>
+            </div>
+        </section>
+          
+          
+            
+    </main>
+
+    <footer class="footer">
+        Все права защищены 2024
+    </footer>
+</body>
+
+</html> 

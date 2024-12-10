@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Напитков - Bordado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .menu-container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 900px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .menu-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            border-radius: 15px 15px 0 0;
+            animation: slideDown 1s ease-out;
+        }
+
+        .menu-header h1 {
+            margin-bottom: 5px;
+            font-size: 36px;
+            letter-spacing: 3px;
+        }
+
+        .menu-header p {
+            font-size: 18px;
+            font-weight: lighter;
+            letter-spacing: 2px;
+        }
+
+        .menu-section {
+            margin: 20px 0;
+            animation: fadeIn 1s ease-out;
+            text-align: left;
+        }
+
+        .menu-section h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 18px;
+            color: #555;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            background-color: #f1f1f1;
+        }
+
+        .menu-item img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu-item-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item-name span {
+            margin-left: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-item span:last-child {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Кнопка */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 25px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #34495e;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-container {
+                padding: 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .menu-header h1 {
+                font-size: 30px;
+            }
+
+            .menu-header p {
+                font-size: 14px;
+            }
+
+            .menu-section h2 {
+                font-size: 20px;
+            }
+
+            .menu-item {
+                font-size: 16px;
+                margin: 15px 0;
+            }
+
+            .menu-item img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>BORDADO</h1>
+            <p>Меню Напитков</p>
+        </div>
+        <div class="menu-section">
+            <h2>Газированные Напитки</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://vodovoz.ru/upload/iblock/bb3/bb306ef5d79a9d0f75554d1afa1d13ac.jpeg" alt="Coca Cola">
+                    <span>Coca-Cola</span>
+                </div>
+                <span>1200 тг</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://static.insales-cdn.com/images/products/1/7015/578476903/fanta0.25.jpg" alt="Fanta">
+                    <span>Fanta</span>
+                </div>
+                <span>1100 тг</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://img.fix-price.kz/800x800/_marketplace/images/origin/8c/8cfd9a75f3a2617f985a1449a647d3ef.jpg" alt="7Up">
+                    <span>7Up</span>
+                </div>
+                <span>1150 тг</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Соки</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://www.onestop.co.uk/wp-content/uploads/3608f066-44e9-4c8b-b638-65526140ec61.png" alt="Tropicana">
+                    <span>Tropicana</span>
+                </div>
+                <span>1650 тг</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://motherlandgroceries.com/cdn/shop/files/minute-maid-100percent-orange-juice-12-oz-motherland-groceries.png?v=1697781075" alt="Minute Maid">
+                    <span>Minute Maid</span>
+                </div>
+                <span>1200 тг</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Минеральная Вода</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://static.insales-cdn.com/r/fBMTy4k-mK4/rs:fit:1000:0:1/q:100/plain/images/products/1/3110/538602534/11041pompelmo-500x500.jpg@jpg" alt="San Pellegrino">
+                    <span>San Pellegrino</span>
+                </div>
+                <span>1300 тг</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    <img src="https://img.fix-price.kz/800x800/_marketplace/images/origin/17/17f78ee68f9f5b861f812bf273896f8c.jpg" alt="Nestlé Pure Life">
+                    <span>Nestlé Pure Life</span>
+                </div>
+                <span>1100 тг</span>
+            </div>
+        </div>
+        <a href="index2.html" class="back-button">Вернуться на главную</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню ресторана</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #590a0a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .filter-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .filter-buttons button {
+            background-color: #1e411e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-buttons button:hover {
+            background-color: #256625;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .menu-item {
+            display: none;
+            margin: 10px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInItem 1s forwards;
+            animation-delay: 0.2s;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .menu-item label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInItem {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Меню ресторана</h1>
+    </header>
+
+    <div class="filter-buttons">
+        <button onclick="filterMenu('all')">Все</button>
+        <button onclick="filterMenu('appetizers')">Аппетайзеры</button>
+        <button onclick="filterMenu('wine')">Вино</button>
+        <button onclick="filterMenu('drinks')">Напитки</button>
+        <button onclick="filterMenu('beer')">Пиво</button>
+        <button onclick="filterMenu('desserts')">Десерты</button>
+    </div>
+
+    <div id="menu">
+
+        <div class="menu-section all">
+            <div class="menu-item">
+                <img src="https://cdn.lifehacker.ru/wp-content/uploads/2023/11/222_1701285693-scaled-e1701285831543-1280x640.jpg" alt="Аппетайзер 1">
+                <label>Канапе с лососем</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.gastronom.ru/HHDWBwo9YmHFsMhEEfQA-h2gj0o1ATJV05bWW3GuZx8/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzMxMWQzYTFjLWQwYmMtNDU1ZS1iOGM3LTljOTM2NGY0ZGVlYS5qcGc.webp" alt="Аппетайзер 2">
+                <label>Брускетта с помидорами</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.insales-cdn.com/r/fBMTy4k-mK4/rs:fit:1000:0:1/q:100/plain/images/products/1/3110/538602534/11041pompelmo-500x500.jpg@jpg" alt="Напиток 1">
+                <label>Свежевыжатый сок</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.fix-price.kz/800x800/_marketplace/images/origin/17/17f78ee68f9f5b861f812bf273896f8c.jpg" alt="Напиток 2">
+                <label>Минеральная вода</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://winexpert.kz/564-large_default/anakena-birdman-cab-sauv-075-l-%D0%B0%D0%BD%D0%B0%D0%BA%D0%B5%D0%BD%D0%B0-%D0%BA%D0%B0%D0%B1%D0%B5%D1%80%D0%BD%D0%B5-%D1%81%D0%BE%D0%B2%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD.jpg" alt="Вино 1">
+                <label>Каберне Совиньон</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://simonwineemporium.co.za/wp-content/uploads/2024/06/Simonsig-Satin-Nectar-Brut.png" alt="Вино 2">
+                <label>Шардоне</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://cookhelp.ru/upload/recipes/tiramisu.jpg" alt="Десерт 1">
+                <label>Тирамису</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://vkusvill.ru/upload/resize/272812/272812_730x409x70_c.webp" alt="Десерт 2">
+                <label>Шоколадный торт</label>
+            </div>
+        </div>
+        
+
+        
+        <div class="menu-section appetizers">
+            <div class="menu-item">
+                <img src="https://cdn.lifehacker.ru/wp-content/uploads/2023/11/222_1701285693-scaled-e1701285831543-1280x640.jpg" alt="Аппетайзер 1">
+                <label>Канапе с лососем</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.gastronom.ru/HHDWBwo9YmHFsMhEEfQA-h2gj0o1ATJV05bWW3GuZx8/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzMxMWQzYTFjLWQwYmMtNDU1ZS1iOGM3LTljOTM2NGY0ZGVlYS5qcGc.webp" alt="Аппетайзер 2">
+                <label>Брускетта с помидорами</label>
+            </div>
+    
+        </div>
+
+     
+        
+        <!-- Вино -->
+        <div class="menu-section wine">
+            <div class="menu-item">
+                <img src="https://winexpert.kz/564-large_default/anakena-birdman-cab-sauv-075-l-%D0%B0%D0%BD%D0%B0%D0%BA%D0%B5%D0%BD%D0%B0-%D0%BA%D0%B0%D0%B1%D0%B5%D1%80%D0%BD%D0%B5-%D1%81%D0%BE%D0%B2%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD.jpg" alt="Вино 1">
+                <label>Каберне Совиньон</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://simonwineemporium.co.za/wp-content/uploads/2024/06/Simonsig-Satin-Nectar-Brut.png" alt="Вино 2">
+                <label>Шардоне</label>
+            </div>
+        </div>
+
+        <!-- Напитки -->
+        <div class="menu-section drinks">
+            <div class="menu-item">
+                <img src="https://static.insales-cdn.com/r/fBMTy4k-mK4/rs:fit:1000:0:1/q:100/plain/images/products/1/3110/538602534/11041pompelmo-500x500.jpg@jpg" alt="Напиток 1">
+                <label>Свежевыжатый сок</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.fix-price.kz/800x800/_marketplace/images/origin/17/17f78ee68f9f5b861f812bf273896f8c.jpg" alt="Напиток 2">
+                <label>Минеральная вода</label>
+            </div>
+        </div>
+        
+        <!-- Пиво -->
+        <div class="menu-section beer">
+            <div class="menu-item">
+                <img src="https://orangetrading.kz/wp-content/uploads/2024/04/heineken_660513aa41ec5.jpg" alt="Пиво 1">
+                <label>Лагер</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://elitclub.kz/upload/images/93194_920079_14.jpg" alt="Пиво 2">
+                <label>IPA</label>
+            </div>
+        </div>
+
+        <!-- Десерты -->
+        <div class="menu-section desserts">
+            <div class="menu-item">
+                <img src="https://cookhelp.ru/upload/recipes/tiramisu.jpg" alt="Десерт 1">
+                <label>Тирамису</label>
+            </div>
+            <div class="menu-item">
+                <img src="https://vkusvill.ru/upload/resize/272812/272812_730x409x70_c.webp" alt="Десерт 2">
+                <label>Шоколадный торт</label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterMenu(category) {
+            const sections = document.querySelectorAll('.menu-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; 
+            });
+
+            if (category === 'all') {
+                sections.forEach(section => {
+                    section.style.display = 'flex'; 
+                });
+            } else {
+               
+                const selectedCategory = document.querySelectorAll(`.${category}`);
+                selectedCategory.forEach(section => {
+                    section.style.display = 'flex'; 
+                });
+            }
+
+            const items = document.querySelectorAll('.menu-item');
+            items.forEach(item => {
+                item.style.display = 'none'; 
+            });
+
+            const selectedItems = document.querySelectorAll(`.${category} .menu-item`);
+            selectedItems.forEach(item => {
+                item.style.display = 'block'; 
+            });
+        }
+
+        window.onload = function() {
+            filterMenu('all');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню с аппетайзерами</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8f8f8, #e0e0e0); 
+            margin: 0;
+            padding: 0;
+            color: #ea78f6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #AFEEEE, #AFEEEE); 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .menu-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item .menu-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #444;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .menu-item .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #f583d8, #e787ef); 
+        
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #2e8b57; 
+        }
+
+        .home-btn {
+            display: inline-block;
+            background-color: #48D1CC;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background-color: #3e9e6d;
+        }
+
+        
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item img {
+                margin-bottom: 15px;
+            }
+
+            .menu-item .price {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Меню с аппетайзерами</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-title">Наши аппетайзеры</div>
+
+        <div class="menu-item">
+            <img src="https://cdn.lifehacker.ru/wp-content/uploads/2023/11/222_1701285693-scaled-e1701285831543-1280x640.jpg" alt="Канапе с красной рыбой">
+            <div class="menu-info">
+                <h2>Канапе с красной рыбой</h2>
+                <p>Тонкий кусочек багета с ломтиком свежей красной рыбы, украшенный зеленью и лимоном.</p>
+                <div class="price">3500 тг</div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.gastronom.ru/HHDWBwo9YmHFsMhEEfQA-h2gj0o1ATJV05bWW3GuZx8/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzMxMWQzYTFjLWQwYmMtNDU1ZS1iOGM3LTljOTM2NGY0ZGVlYS5qcGc.webp" alt="Мини-бургеры">
+            <div class="menu-info">
+                <h2>Мини-бургеры</h2>
+                <p>Миниатюрные бургеры с говяжьей котлетой, свежими овощами и соусом.</p>
+                <div class="price">3000 тг</div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://eco-buffet.com/wp-content/uploads/2023/09/brusketa.png" alt="Брускетта с томатами">
+            <div class="menu-info">
+                <h2>Брускетта с томатами</h2>
+                <p>Тосты с помидорами, чесноком, оливковым маслом и базиликом.</p>
+                <div class="price">2800 тг</div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://kozalavka.ru/a/kozadereza/files//import/iiko_img_decf9070-8ed6-40f9-baa4-89d241330f1b_560294ca-da7a-48c8-bf39-6afad3b0dff9.jpg" alt="Кростини с паштетом">
+            <div class="menu-info">
+                <h2>Кростини с паштетом</h2>
+                <p>Кростини с домашним паштетом из курицы и острого перца, с укропом.</p>
+                <div class="price">3600 тг</div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.steakhome.ru/upload/iblock/3c3/3c3f6ac9bb00434e0aecba57c581f528.jpg" alt="Тартар из тунца">
+            <div class="menu-info">
+                <h2>Тартар из тунца</h2>
+                <p>Свежее филе тунца с авокадо, лаймом и специями, подается с чипсами.</p>
+                <div class="price">3600 тг</div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://maximilian.md/wp-content/uploads/set-blagorodnyh-syrov-set-de-cascaval-nobile-res.jpg" alt="Сет сыров">
+            <div class="menu-info">
+                <h2>Сет сыров</h2>
+                <p>Ассорти из лучших сыров с орехами, медом и фруктами.</p>
+                <div class="price">3150 тг</div>
+            </div>
+        </div>
+
+        <!-- Home Button -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index2.html" class="home-btn">На главную</a>
+        </div>
+    </div>
+
+   
+
+</body>
+
+</html>
+
